@@ -1,0 +1,16 @@
+to create django app type the following command  (python manage.py startapp "name of application")
+
+****
+
+django function to include files (from the django.urls import path, *include*), the function lets you import application URLs.
+
+how to use:
+select folder url home(main), insert in path(' indicate name of app it  name of file).
+
+Example: 
+
+urlpatterns = [
+      path('admin/', admin.site.urls),
+      path(" ", include("recipes.urls") )
+]
+
